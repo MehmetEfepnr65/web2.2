@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota</title>
+    <link rel="stylesheet" href="TAraba.css">
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="#">TOYATA</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="aktif">arabalar</a></li>
+                <li><a href="https://tr.wikipedia.org/wiki/Toyota">tarih</a></li>
+                <li><a href="https://www.toyota.com.tr/araba-modelleri">modeller</a></li>
+                <li><a href="https://www.toyota.com.tr/satis-sonrasi-hizmetler/toyota-garanti-sistemi/toyota-garanti-on">garanti sistemi</a></li>
+                <li><a href="https://turkiye.toyota.com.tr/middle/fiyatl_aksesuar.html?_ga=2.261899595.750523106.1704724949-794266981.1703793993&_gac=1.215068389.1703931415.CjwKCAiAnL-sBhBnEiwAJRGighQYKzmCw8dqGSf491wgQ2qC2eAwv0QzWV2HfAJReJA4X1TRQ7krfRoCIcsQAvD_BwE">fiyat listesi</a></li>
+            </ul>
+        </div>
+        <div class="sosyal-medya">
+            <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="row">
+            <div class="left-sec">
+                <div class="content">
+                    <h2><span>Toyota</span><br>corolla</h2>
+                    <p><h6>hız ve konfor ikisinde bir arada ve en yüksek kalitede olduğu bir arabamı işte bu aklını başından alıcak
+                        kelimenin tam anlamıyla toyota bir bir araba olmaktan çıktı bir hayat tarzı yolunda ilerliyor sende bu ilerlemede var mısın.</h6></p>
+                </div>
+                <button class="keşfet-btn">
+                    <a href="#">keşfet</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                </button>
+                <div class="toyota corolla">
+                <div class="üretme">
+                    <p>üretme</p>
+                    <h5>1966-günümüz</h5>
+                </div>
+                <div class="üretme">
+                    <p>tasarımcı</p>
+                    <h5>Mehmet Efe Pınaroğlu</h5>
+                </div>
+            </div>
+        </div>
+        <div class="right-sec">
+            <div class="my-car">
+                <div><img src="images/zyro-image.png" alt=""></div>
+                <div><img src="images/zyro-image (1).png" alt=""></div>
+                <div><img src="images/zyro-image (2).png" alt=""></div>
+                <div><img src="images/zyro-image (3).png" alt=""></div>
+                <div><img src="images/zyro-image (4).png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+            $(".my-car").slick({
+                autoplay:true,
+                dots:true,
+                speed:1000,
+                customPaging : function(slider,i){
+                    var thumb = $(slider.$slides[i]).data(); 
+                    return'<a>'+(i+1)+'</a>';
+                },
+            })
+         });
+    </script>
+</body>
+</html>
